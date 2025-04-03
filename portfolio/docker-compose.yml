@@ -1,0 +1,15 @@
+services:
+  portfolio:
+    container_name: portfolio_container
+    build: .
+    image: portfolio:v1
+    ports:
+      - "80:80"
+    expose:
+      - 80
+    networks:
+      - internalnet
+
+networks:
+  internalnet:
+    driver: bridge
