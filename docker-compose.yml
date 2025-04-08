@@ -1,14 +1,26 @@
 services:
+
+  # Development
   portfolio:
     container_name: portfolio_container
     build: .
     image: portfolio:v1
     ports:
-      - "80:80"
-    expose:
-      - 80
+      - "4200:4200"
+    volumes:
+      - .:/app
     networks:
       - internalnet
+  
+  #  Prod 
+  # portfolio:
+  #   container_name: portfolio_container
+  #   build: .
+  #   image: portfolio:v1
+  #   ports:
+  #     - "3000:443"
+  #   networks:
+  #     - internalnet
 
 networks:
   internalnet:
