@@ -1,0 +1,5 @@
+.identity-style {
+	@apply absolute w-max h-max
+			top-6 left-6
+			space-y-6
+}

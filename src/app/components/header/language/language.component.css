@@ -1,0 +1,15 @@
+.slide-toggle-style {
+	@apply relative w-11 h-6
+			bg-custom-cyan/80 
+			rounded-full 
+			after:content-[''] 
+			after:absolute 
+			after:top-0.5 
+			after:start-[2px] 
+			after:bg-kingpong3 
+			after:border-kingpong3 
+			after:border 
+			after:rounded-full 
+			after:h-5 after:w-5 
+			after:transition-all
+}

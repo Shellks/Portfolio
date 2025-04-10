@@ -1,0 +1,12 @@
+<div id="preview" class="absolute top-1/2 left-1/2 w-max h-max transform -translate-x-1/2 -translate-y-1/2 items-center text-center">
+	<div id="selection" class="flex items-center">
+		<img src="assets/img/arrow_left.svg" alt="" class="h-6 w-6 bottom-1/2" (click)="onLeftClick()">
+		<img src="assets/img/kingpong_logo.svg" alt="kingpong_logo" class="ml-4 mr-4 h-72 w-72">
+		<img src="assets/img/arrow_right.svg" alt="" class="h-6 w-6" (click)="onRightClick()">
+	</div>
+	<div id="info">
+		<p id="project_name" class="mb-4 text-2xl">{{title}}</p>
+		<p id="description-preview" class="text-sm">{{description}}</p>
+	</div>
+	<button id="details-button" class="mt-10 border rounded-full border-custom-cyan px-6 py-2">{{buttonText}}</button>
+</div>

@@ -1,0 +1,10 @@
+<div id="language-toggle" class="absolute flex gap-4 right-0 pr-6 pt-6" (change)="onLanguageToggle($event)">
+	<label class="inline-flex items-center mb-5 cursor-pointer">
+		<input type="checkbox" value="" class="sr-only peer">
+		<span class="mr-3">{{language}}</span>
+		<div class="slide-toggle-style 
+		peer peer-checked:after:translate-x-full 
+		rtl:peer-checked:after:-translate-x-full 
+		peer-checked:after:border-kingpong3"></div>
+	  </label>
+</div>
