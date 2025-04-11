@@ -1,9 +1,0 @@
-.screen-style {
-	@apply relative h-screen w-screen 
-			bg-gradient-to-b 
-			from-kingpong3
-			via-kingpong2
-			to-kingpong1
-			text-custom-cyan
-			font-bold font-jetbrains;
-}

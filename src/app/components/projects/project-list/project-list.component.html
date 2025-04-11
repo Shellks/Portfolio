@@ -1,10 +1,6 @@
-<div id="screen" class="screen-style" >
-	<app-header></app-header>
-	<app-contact></app-contact>
-	<div id="project-list" class="absolute left-3/4 top-36">
-		<p class="mb-2">KingPong</p>
-		<p class="mb-2">Matcha</p>
-		<p>Hypertube</p>
-	</div>
-	<app-project-preview></app-project-preview>
+<app-header></app-header>
+<app-contact></app-contact>
+<div id="project-list" class="absolute left-3/4 top-36">
+	<p class="mb-2" *ngFor="let title of projectsTitles">{{ title }}</p>
 </div>
+<app-project-preview></app-project-preview>
